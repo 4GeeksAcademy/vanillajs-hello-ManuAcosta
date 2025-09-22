@@ -24,14 +24,14 @@ function generadorDeDominios() {
   for (let i = 0; i < pronombre.length; i++) {
     for (let j = 0; j < adjetivo.length; j++) {
       for (let k = 0; k < sustantivo.length; k++) {
-        // 3. Agregamos un cuarto bucle para las extensiones
+        // 3. Extensiones
         for (let l = 0; l < extension.length; l++) {
 
-          // URL Dominio
+          // 4. URL Dominio
           let dominioUno = pronombre[i] + adjetivo[j] + sustantivo[k] + extension[l];
           console.log(dominioUno);
 
-          // Domain Hack
+          // 5. Domain Hack
           let sinPunto = extension[l].slice(1);
 
           
