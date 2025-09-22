@@ -34,9 +34,9 @@ function generadorDeDominios() {
           // Domain Hack
           let sinPunto = extension[l].slice(1);
 
-          // Comprobamos si el final del sustantivo es igual a la extensión
+          
           if (sustantivo[k].endsWith(sinPunto)) {
-            // Si coincide, creamos el "hack"
+            
             let hack = pronombre[i] + adjetivo[j] + sustantivo[k].slice(0, -sinPunto.length) + extension[l];
             console.log('Domain Hack ' + hack);
           }
